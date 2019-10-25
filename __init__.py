@@ -1,8 +1,16 @@
 class Item():
-    pass
+    def __init__(self, name, description, value):
+        self.name = name
+        self.description = description
+        self.value = value
+
 class Weapon(Item):
-    pass
+    def __init__(self, name, description, value, damage):
+
 class Rock(Weapon):
-    pass
+    def __init__(self):
+        super.__init__()
+
 class Bottle(Weapon):
-    pass
+    def __init__(self):
+        super.__init__()
